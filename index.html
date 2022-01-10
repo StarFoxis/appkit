@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AppKit</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/672183a3e0.js" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body data-bs-spy="scroll" data-bs-target="#scroll">
+		<header>
+			<nav class="navbar navbar-expand-md fixed-top navbar-dark" id="scroll">
+				<div class="container-md">
+					<a href="#" class="navbar-brand d-flex align-items-center">
+						<div class="brand-image">
+							<img src="images/logo-icon.svg" alt="Логотип" />
+						</div>
+						<span class="brand-text"><span>App</span>kit</span>
+					</a>
+
+					<button
+						class="navbar-toggler bg-dark"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#headerNav"
+						aria-controls="headerNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="headerNav">
+						<ul class="nav navbar-nav ms-auto">
+							<li class="nav-item"><a class="nav-link" href="#scroll-point1">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scroll-point2">Testimonials</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scroll-point3">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scroll-point4">Team</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scroll-point5">Pricing</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scroll-point6">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="slider">
+				<div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button
+							class="carousel-indicator active"
+							type="button"
+							data-bs-target="#headerCarousel"
+							data-bs-slide-to="0"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button class="carousel-indicator" type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button class="carousel-indicator" type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" style="background-image: url('images/hero-1.jpg')">
+							<div class="container-md position-relative h-100">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">AppKit is the perfect front-end template for app developers</h5>
+										<p class="card-text">It helps developers to build beautiful and user-friendly web apps quickly and easily!</p>
+										<a href="#" class="btn">Get Started</a>
+									</div>
+								</div>
+								<img src="images/imac.png" alt="Imac" class="imac" />
+							</div>
+						</div>
+						<div class="carousel-item" style="background-image: url('images/hero-2.jpg')">
+							<div class="container-md position-relative h-100">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Angular Lover?</h5>
+										<p class="card-text">
+											AppKit also comes with an Angular JS version. It empowers developers to create UI components with very little code. Feeding data into
+											AppKit directives is quick and easy.
+										</p>
+										<a href="#" class="btn">Find out more</a>
+									</div>
+								</div>
+								<img src="images/imac.png" alt="Imac" class="imac" />
+							</div>
+						</div>
+						<div class="carousel-item" style="background-image: url('images/hero-3.jpg')">
+							<div class="container-md position-relative h-100">
+								<div class="card">
+									<div class="card-body">
+										<h5 class="card-title">Ready to build outstanding apps?</h5>
+										<p class="card-text">
+											Get AppKit today and it will supercharge your development. It's a must-have for any developers who are serious about building great
+											products!
+										</p>
+										<a href="#" class="btn">Try it now</a>
+									</div>
+								</div>
+								<img src="images/imac.png" alt="Imac" class="imac" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="section about" id="scroll-point1">
+				<div class="container-md">
+					<h1 class="title">Why Use AppKit?</h1>
+					<h2 class="subtitle">Appkit uses modern front-end technologies and is packed with useful components and widgets to speed up your app development</h2>
+					<ul class="list-group list-group-horizontal icons">
+						<li class="list-group-item"><img src="images/logo-bootstrap.svg" alt="" /></li>
+						<li class="list-group-item"><img src="images/logo-angular.svg" alt="" /></li>
+						<li class="list-group-item"><img src="images/logo-html5.svg" alt="" /></li>
+						<li class="list-group-item"><img src="images/logo-css3.svg" alt="" /></li>
+						<li class="list-group-item"><img src="images/logo-less.svg" alt="" /></li>
+						<li class="list-group-item"><img src="images/logo-jquery.svg" alt="" /></li>
+					</ul>
+					<div class="scope">
+						<div class="row">
+							<div class="col-md-4 col-sm">
+								<div class="card">
+									<div class="card-image">
+										<img src="images/figure-1.png" alt="" class="card-img-top" />
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">UX-Centered Design</h5>
+										<p class="card-text">
+											Bespoke UX/UI design to enhance your app's user experience. Let AppKit take care of the design so you can develop without design
+											resources.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm">
+								<div class="card">
+									<div class="card-image">
+										<img src="images/figure-2.png" alt="" class="card-img-top" />
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Supercharge App Development</h5>
+										<p class="card-text">
+											AppKit provides developers with a ready-made front-end solution so you can concentrate on making your app's back-end robust and awesome.
+											It empowers small teams to create big things.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm">
+								<div class="card">
+									<div class="card-image">
+										<img src="images/figure-3.png" alt="" class="card-img-top" />
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Mobile First</h5>
+										<p class="card-text">
+											Built on the popular Bootstrap framework, so the design is “Mobile First” and fully responsive. For a startup, building an HTML5 webapp
+											which also works across mobile devices is the most cost-effective way to get your product off the ground.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section comments" id="scroll-point2">
+				<h1 class="title text-white">Many Happy Customers</h1>
+				<div class="container-md">
+					<div class="row">
+						<div class="col-12 d-flex align-items-start justify-content-center p-0 comment">
+							<img src="images/profile-1.png" alt="" class="profile" />
+							<blockquote class="left">
+								<p>
+									Testimonial goes here Donec felis odio, sagittis eu cursus ac, porttitor eu purus. In a bibendum dui. Nullam id est sed felis rutrum tincidunt
+									eu nec nisi morbi euismod semper neque sed lobortis.
+								</p>
+								<span>@JohnK, San Francisco</span>
+							</blockquote>
+						</div>
+						<div class="col-12 d-flex align-items-start justify-content-center p-0 comment">
+							<blockquote class="right">
+								<p>Testimonial goes here fermentum sed pharetra in, aliquet sodales quam. Ut sed turpis quis orci viverra aliquet interdum ut ipsum.</p>
+								<span>@LisaWhite, London</span>
+							</blockquote>
+							<img src="images/profile-2.png" alt="" class="profile" />
+						</div>
+						<div class="col-12 d-flex align-items-start justify-content-center p-0 comment">
+							<img src="images/profile-3.png" alt="" class="profile" />
+							<blockquote class="left">
+								<p>Testimonial goes here vestibulum non hendrerit lorem, luctus tincidunt erat. Sed pharetra aliquam posuere. Pellentesque sollicitudin.</p>
+								<span>@MattH, Berlin</span>
+							</blockquote>
+						</div>
+						<div class="col-12 d-flex align-items-start justify-content-center p-0 comment">
+							<blockquote class="right">
+								<p>
+									Testimonial goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+									natoque penatibus et magnis
+								</p>
+								<span>@RyanW, Paris</span>
+							</blockquote>
+							<img src="images/profile-4.png" alt="" class="profile" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section features" id="scroll-point3">
+				<h1 class="title">Discover Features</h1>
+				<h2 class="subtitle">AppKit comes with an AngularJS version, 4 colour schemes and 100+ components</h2>
+
+				<div class="container-md">
+					<div class="row">
+						<div class="col-md-7 col-ls-6">
+							<div class="tab-content" id="featuresContent">
+								<div class="tab-pane fade show active" id="feature1" role="tabpanel" aria-labelledby="feature1-tab">
+									<img src="images/feature-1.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature2" role="tabpanel" aria-labelledby="feature2-tab">
+									<img src="images/feature-2.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature3" role="tabpanel" aria-labelledby="feature3-tab">
+									<img src="images/feature-3.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature4" role="tabpanel" aria-labelledby="feature4-tab">
+									<img src="images/feature-4.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature5" role="tabpanel" aria-labelledby="feature5-tab">
+									<img src="images/feature-5.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature6" role="tabpanel" aria-labelledby="feature6-tab">
+									<img src="images/feature-6.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature7" role="tabpanel" aria-labelledby="feature7-tab">
+									<img src="images/feature-7.png" alt="" class="d-block w-100" />
+								</div>
+								<div class="tab-pane fade" id="feature8" role="tabpanel" aria-labelledby="feature8-tab">
+									<img src="images/feature-8.png" alt="" class="d-block w-100" />
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 col-ls-6">
+							<ul class="nav nav-tabs flex-column" id="featuresTabs" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link active"
+										id="feature1-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature1"
+										type="button"
+										role="tab"
+										aria-controls="feature1"
+										aria-selected="true"
+									>
+										<i class="fa fa-magic"></i>
+										20+ Use Case-based App Pages
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature2-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature2"
+										type="button"
+										role="tab"
+										aria-controls="feature2"
+										aria-selected="false"
+									>
+										<i class="fa fa-cubes"></i>
+										100+ Components and Widgets
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature3-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature3"
+										type="button"
+										role="tab"
+										aria-controls="feature3"
+										aria-selected="false"
+									>
+										<i class="fa fa-bar-chart"></i>
+										Useful Chart Libraries
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature4-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature4"
+										type="button"
+										role="tab"
+										aria-controls="feature4"
+										aria-selected="false"
+									>
+										<i class="fa fa-star"></i>
+										AngularJS Version Included
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature5-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature5"
+										type="button"
+										role="tab"
+										aria-controls="feature5"
+										aria-selected="false"
+									>
+										<i class="fa fa-rocket"></i>
+										Built on Bootstrap 3
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature6-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature6"
+										type="button"
+										role="tab"
+										aria-controls="feature6"
+										aria-selected="false"
+									>
+										<i class="fa fa-tablet"></i>
+										Fully Responsive
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature7-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature7"
+										type="button"
+										role="tab"
+										aria-controls="feature7"
+										aria-selected="false"
+									>
+										<i class="fa fa-file-code-o"></i>
+										Valid HTML5 + CSS3
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button
+										class="nav-link"
+										id="feature8-tab"
+										data-bs-toggle="tab"
+										data-bs-target="#feature8"
+										type="button"
+										role="tab"
+										aria-controls="feature8"
+										aria-selected="false"
+									>
+										<i class="fa fa-heart"></i>
+										Free Updates &amp; Support + Documentation
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section team" id="scroll-point4">
+				<h1 class="title">Our Team</h1>
+				<h2 class="subtitle">See who are behind AppKit</h2>
+
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<p class="create-text">
+								AppKit is created by Xiaoying Riley and Tomasz Najdek. Xiaoying and Tom got to know each other while working as freelancers on Google projects
+								and became good friends. They firmly believe with the right resource, solopreneurs and small teams can execute beautiful products too. Thus they
+								made AppKit to help developers and startups make outstanding products - the internet has made it possible for the "small guys" to compete
+								directly with the "big guys".
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="offset-xl-2 col-xl-4 offset-lg-1 col-lg-5">
+							<div class="card">
+								<div class="card-image">
+									<img src="images/team-1.png" alt="" class="card-img-top" />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-center">Xiaoying Riley</h5>
+									<h6 class="card-subtitle text-center">Full-Stack Designer</h6>
+									<ul class="card-lists networks">
+										<li class="card-list-item" style="background-color: #55acee">
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li class="card-list-item" style="background-color: #3b5998">
+											<a href="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li class="card-list-item" style="background-color: #444">
+											<a href="#"><i class="fa fa-github"></i></a>
+										</li>
+										<li class="card-list-item" style="background-color: #ec4d8b">
+											<a href="#"><i class="fa fa-dribbble"></i></a>
+										</li>
+										<li class="card-list-item" style="background-color: #1e6fba">
+											<a href="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+									</ul>
+									<p class="card-text text-center">
+										Xiaoying is the UX/UI designer behind AppKit. She loves designing and making Bootstrap themes/templates for developers and startups. You can
+										find her sharing useful UX and webdev related content on
+										<a href="#" class="card-link text-decoration-none">Twitter</a> and <a href="#" class="card-link text-decoration-none">Facebook</a>. Follow
+										her if you like what she does!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-5">
+							<div class="card">
+								<div class="card-image">
+									<img src="images/team-2.png" alt="" class="card-img-top" />
+								</div>
+								<div class="card-body">
+									<h5 class="card-title text-center">Tomasz Najdek</h5>
+									<h6 class="card-subtitle text-center">Full-Stack Developer</h6>
+									<ul class="card-lists networks">
+										<li class="card-list-item" style="background-color: #55acee">
+											<a href="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li class="card-list-item">
+											<a href="#"><i class="fa fa-globe"></i></a>
+										</li>
+										<li class="card-list-item" style="background-color: #444">
+											<a href="#"><i class="fa fa-github"></i></a>
+										</li>
+									</ul>
+									<p class="card-text text-center">
+										Tom takes care of everything on the programming end making the interface rich and flexible. He is a full-stack developer specialising in
+										building large, scalable and user-friendly web apps. Follow him on
+										<a href="#" class="card-link text-decoration-none">Twitter</a> for fresh developer tips and check out his
+										<a href="#" class="card-link text-decoration-none">Github</a> for useful open-source tools.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section price" id="scroll-point5">
+				<h1 class="title">Pricing</h1>
+				<h2 class="subtitle">AppKit's future updates are 100% FREE for existing customers</h2>
+				<div class="container-md">
+					<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 text-center justify-content-center">
+						<div class="col">
+							<div class="card text-white bg-success">
+								<div class="card-body">
+									<h5 class="card-title">Single Application</h5>
+									<p class="card-price-text"><span>$</span>20</p>
+									<p class="card-text-info">Restricted to a single installation...</p>
+									<a href="#" class="card-detail">License Details</a>
+									<a href="" class="btn">Buy Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card text-white bg-info">
+								<div class="card-body">
+									<h5 class="card-title">Single Application</h5>
+									<p class="card-price-text"><span>$</span>20</p>
+									<p class="card-text-info">Restricted to a single installation...</p>
+									<a href="#" class="card-detail">License Details</a>
+									<a href="" class="btn">Buy Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card text-white bg-warning">
+								<div class="card-body">
+									<h5 class="card-title">Single Application</h5>
+									<p class="card-price-text"><span>$</span>20</p>
+									<p class="card-text-info">Restricted to a single installation...</p>
+									<a href="#" class="card-detail">License Details</a>
+									<a href="" class="btn">Buy Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact" id="scroll-point6">
+				<div class="container-md text-center">
+					<h1 class="title">Contact Us</h1>
+					<h2 class="subtitle">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+						parturient montes, nascetur ridiculus mus. Donec quam felis.
+					</h2>
+
+					<a href="#" class="btn">Get in Touch</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-dark">
+			<div class="container-md">
+				<p class="text-center" style="line-height: 40px; margin: 0; color: rgba(255, 255, 255, 0.6)">
+					Designed with <i class="fa fa-heart" style="color: #ea5395"></i> by <a href="#" class="card-link text-decoration-none">Xiaoying Riley</a> for
+					developers
+				</p>
+				<p class="text-center" style="color: rgba(255, 255, 255, 0.6)">
+					<i class="fa fa-heart" style="color: #ea5395"></i>А также коряво, но повторил milovanovv1@mail.ru<i class="fa fa-heart" style="color: #ea5395"></i>
+				</p>
+			</div>
+		</footer>
+
+		<script defer>
+			$(document).ready(function () {
+				/* ======= Fixed header when scrolled ======= */
+
+				$(window).bind("scroll", function () {
+					if ($(window).scrollTop() > 0) {
+						$("#scroll").addClass("header-scrolled");
+					} else {
+						$("#scroll").removeClass("header-scrolled");
+					}
+				});
+
+				// /* ======= Scrollspy ======= */
+				// $("body").scrollspy({ target: "#header", offset: 100 });
+
+				// /* ======= ScrollTo ======= */
+				// $("a.scrollto").on("click", function (e) {
+				// 	//store hash
+				// 	var target = this.hash;
+
+				// 	e.preventDefault();
+
+				// 	$("body").scrollTo(target, 800, { offset: -50, axis: "y" });
+				// 	//Collapse mobile menu after clicking
+				// 	if ($(".navbar-collapse").hasClass("in")) {
+				// 		$(".navbar-collapse").removeClass("in").addClass("collapse");
+				// 	}
+				// });
+			});
+		</script>
+	</body>
+</html>

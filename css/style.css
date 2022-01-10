@@ -1,0 +1,480 @@
+.btn {
+    padding: 10px 30px;
+    background-color: #40babd;
+    border: #40babd;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #3aa7aa;
+    color: #fff;
+}
+
+.carousel-indicators {
+    z-index: 100;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    color: #40babd;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.card-subtitle {
+    color: #616670;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.card-link {
+    color: #40babd;
+}
+
+.card-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-lists .card-list-item {
+    padding: 5px;
+    margin: 0 5px;
+    background-color: #40babd;
+}
+
+.card-link:hover {
+    color: #40babd;
+    text-decoration: underline!important;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #616670;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 760px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    color: #a2a6af;
+}
+
+header .brand-image {
+    margin-right: 10px;
+}
+
+header .brand-text {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+header .brand-text span {
+    font-weight: 800;
+}
+
+header .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 5px;
+}
+
+header .slider .carousel-item {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    width: 100%;
+}
+
+header .slider .carousel-indicator {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+header .slider .active {
+    background-color: #40babd;
+}
+
+header .card {
+    margin-top: 150px;
+    color: #fff;
+    width: 40%;
+    display: inline-block;
+}
+
+header .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+header .card-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+header .imac {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.about .card {
+    margin: 0 auto;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.about .icons {
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.about .icons li {
+    border: 0;
+}
+
+.comments {
+    background-color: #40babd;
+    background-image: url('../images/map.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comments .title {
+    margin-bottom: 50px;
+}
+
+.comments .comment {
+    margin-bottom: 30px;
+}
+
+.comments blockquote {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+}
+
+.comments blockquote.left {
+    margin-left: 30px;
+}
+
+.comments blockquote.left:before {
+    position: absolute;
+    left: -10px;
+    top: 30px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.comments blockquote.right {
+    margin-right: 30px;
+}
+
+.comments blockquote.right:before {
+    position: absolute;
+    right: -10px;
+    top: 30px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.comments blockquote p {
+    max-width: 575px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.comments blockquote span {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+}
+
+.features .nav-tabs {
+    border: 0;
+    margin-top: 30px;
+}
+
+.features .nav-link {
+    border: 0;
+    color: #616670;
+}
+
+.features .nav-link:hover {
+    color: #40babd;
+}
+
+.features .nav-link.active {
+    color: #40babd;
+}
+
+.team {
+    background-color: #f5f5f5;
+}
+
+.team .create-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 800px;
+    color: #616670;
+}
+
+.team .card {
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #fff;
+}
+
+.team .card-img-top {
+    width: 120px;
+}
+
+.team .card-text {
+    color: #616670;
+}
+
+.team .card-list-item {
+    border-radius: 100%;
+}
+
+.team .card-lists i:hover {
+    color: #c1c8da;
+    transition: all .5s ease-in;
+}
+
+.team .card-lists i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.price .card {
+    padding: 20px;
+}
+
+.price .card-title {
+    color: #fff;
+}
+
+.price .card-price-text {
+    font-size: 46px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.price .card-detail {
+    display: block;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+.price .btn {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff
+}
+
+.price .btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.price .card-detail:hover {
+    text-decoration: underline;
+}
+
+.price .card-price-text span {
+    font-size: 26px;
+    opacity: 0.6;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+.contact {
+    background-color: #494d55;
+    background-image: url('../images/map.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
+}
+
+.contact .title {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact .btn {
+    padding: 15px 40px;
+}
+
+.contact .subtitle {
+    color: #fff;
+    font-size: 16px;
+    max-width: 670px;
+}
+
+.header-scrolled {
+    background-color: #fff;
+    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+}
+
+.header-scrolled .navbar-brand {
+    color: #494d55;
+}
+
+.header-scrolled .brand-image {
+    background-color: #40babd;
+    border-radius: 100%;
+    padding: 10px;
+    line-height: 14px;
+}
+
+.header-scrolled .brand-image img {
+    width: 20px;
+    height: 20px;
+}
+
+.header-scrolled .nav-link {
+    color: #a2a6af!important;
+}
+
+.header-scrolled .nav-item .active {
+    color: #494d55!important;
+    border-bottom: 4px solid #40babd;
+}
+
+footer {
+    padding: 10px;
+}
+
+@media (max-width: 991.98px) {
+    header .imac {
+        width: 400px;
+        top: 130px;
+    }
+
+    header .card {
+        margin-top: 130px;
+        width: 45%;
+    }
+
+    .features .nav-tabs {
+        margin-top: 10px;
+    }
+
+    .features .nav-link {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    header .slider .carousel-item {
+        height: 660px;
+    }
+
+    header .imac {
+        width: 300px;
+        left: 40px;
+        bottom: 0;
+        top: auto;
+    }
+
+    header .card {
+        width: 100%;
+    }
+
+    header .navbar-collapse {
+        background-color: #212529;
+    }
+
+    header .navbar-collapse ul {
+        align-items: center;
+    }
+
+    header .nav-link {
+        padding: 11px 0;
+    }
+
+    .comments .row {
+        margin: 0 10px;
+    }
+
+    .features .nav-tabs {
+        align-items: center;
+    }
+
+    .price .col {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    header .card {
+        margin-top: 100px;
+    }
+
+    .comments blockquote {
+        padding: 15px;
+    }
+
+    .about .icons {
+        align-items: flex-start;
+    }
+
+    .about .icons .list-group-item {
+        padding: .5rem 10px;
+    }
+}
